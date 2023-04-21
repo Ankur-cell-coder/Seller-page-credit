@@ -9,7 +9,7 @@ import './App.css';
 import Dashboard from './Components/Dashboard';
 import { useState } from 'react';
 import SignIn from "./Components/signin/signin.component";
-import Navbar from "./Navbar"
+
 
 const logout = function () {
   localStorage.removeItem("JWT");
