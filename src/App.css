@@ -34,12 +34,18 @@ body h3 {
   width:800px;
   justify-content: space-between;
   margin-top: 20px;
+  
+}
+.navcomp{
+  text-decoration: none;
+  color: black;
 }
 
 .lgout{
   margin-right: 20px;
   margin-top: 20px;
   text-decoration: none;
+  color: black;
 }
 
 .edit-link {

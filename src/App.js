@@ -9,6 +9,12 @@ import './App.css';
 import Dashboard from './Components/Dashboard';
 import { useState } from 'react';
 import SignIn from "./Components/signin/signin.component";
+import Orders from './Components/Orders';
+import Catalogue from './Components/Catalogue';
+import Logistics from './Components/Logistics';
+import R_C from './Components/R_C';
+import Rating from './Components/Rating';
+import Contact from './Components/Contact';
 
 
 const logout = function () {
@@ -46,36 +52,65 @@ const App = () => {
 
           <div className='navcontent'>
 
-            <div style={{ marginLeft: '20px',marginTop: '20px' }}>
+            <div style={{ marginLeft: '20px', marginTop: '20px' }}>
               LOGO
             </div>
 
             <div className='middle_navbar'>
 
               <div>
-                Dashboard
+              <Link to={'/'} className='navcomp'>
+                 Dashboard
+                </Link>
+              </div>
+
+              <div>
+                <Link to={'/orders'} className='navcomp'>
+                <select style={{ width: '100px', background: 'skyblue', border: '0px ' }}>
+                  <option>Orders </option>
+                  <option>A</option>
+                  <option>B</option>
+                </select>
+                </Link>
+              </div>
+
+              <div>
+              <Link to={'/catalogue'} className='navcomp'>
+                <select style={{ width: '100px', background: 'skyblue', border: '0px ' }}>
+                  <option>Catalogue </option>
+                  <option>A</option>
+                  <option>B</option>
+                </select>
+              </Link>
               </div>
               <div>
-              <select style={{width:'100px',background:'skyblue',border:'0px '}}>
-                    <option>Orders </option>
-                    <option>A</option>
-                    <option>B</option>
-              </select>
+              <Link to={'/logistics'} className='navcomp'>
+                <select style={{ width: '100px', background: 'skyblue', border: '0px ' }}>
+                  <option>Logistics </option>
+                  <option>A</option>
+                  <option>B</option>
+                </select>
+                </Link>
               </div>
               <div>
-                Catalogue
+              <Link to={'/rc'} className='navcomp'>
+                <select style={{ width: '100px', background: 'skyblue', border: '0px ' }}>
+                  <option>R & C </option>
+                  <option>A</option>
+                  <option>B</option>
+                </select>
+                </Link>
               </div>
               <div>
-                Logistics
-              </div>
-              <div>
-                R & C
-              </div>
-              <div>
+              <Link to={'/rating'} className='navcomp'>
                 Rating
+                </Link>
               </div>
               <div>
-                Contact/Support
+                <Link to={'/contact'} className='navcomp'>
+                 Contact/Support
+                </Link>
+                
               </div>
 
 
@@ -105,9 +140,13 @@ const App = () => {
             <Col md={12}>
               <div className="wrapper">
                 <Routes>
-                  <Route exact path="/"
-                    element={loggedIn ? <Dashboard option={option} /> : <SignIn />} />
-                  
+                  <Route exact path="/" element={loggedIn ? <Dashboard /> : <SignIn />} />
+                  <Route exact path="/orders" element={loggedIn ? <Orders /> : <SignIn />} />
+                  <Route exact path="/catalogue" element={loggedIn ? <Catalogue /> : <SignIn />} />
+                  <Route exact path="/logistics" element={loggedIn ? <Logistics /> : <SignIn />} />
+                  <Route exact path="/rc" element={loggedIn ? <R_C /> : <SignIn />} />
+                  <Route exact path="/rating" element={loggedIn ? <Rating /> : <SignIn />} />
+                  <Route exact path="/contact" element={loggedIn ? <Contact /> : <SignIn />} />
                 </Routes>
               </div>
             </Col>

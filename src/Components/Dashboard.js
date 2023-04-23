@@ -15,7 +15,7 @@ Chart.register(CategoryScale);
 
 /////  first chart 
 const options = {
-    indexAxis: 'y',
+    indexAxis: 'y',  
     elements: {
         bar: {
             borderWidth: 2,
