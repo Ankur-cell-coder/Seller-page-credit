@@ -6,7 +6,9 @@ import { Bar } from 'react-chartjs-2';
 import { CategoryScale } from 'chart.js';
 import Horizontal1 from './Horizontal1';
 import PieChart1 from './PieChart1';
+
 import Area1 from './Area1';
+import Search from './Search';
 Chart.register(CategoryScale);
 
 
@@ -18,34 +20,44 @@ const options = {
     indexAxis: 'y',  
     elements: {
         bar: {
-            borderWidth: 2,
+            borderWidth: 0,
         },
     },
-    responsive: true,
+   
     plugins: {
         legend: {
             position: 'bottom',
+            align:'start',
+            labels: {
+                usePointStyle: true,
+                pointStyle: 'circle',
+                  color: 'black'
+              }
         },
         title: {
             display: true,
-            text: 'Performance bar',
+            text: 'Performance',
         },
     },
 };
 
-const labels = ['loreum', 'loreum', 'loreum']
 
+const labels=['Loreum ', 'Loreum ', 'Loreum ']
 const data = {
     labels,
     datasets: [
         {
-            label: 'Dataset 1',
             data: [40, 88, 60],
-           
-            backgroundColor: 'rgba(25, 90, 13, 0.5)',
+            backgroundColor: 
+            [
+                'blue',
+                '#F4C430',
+                'purple',
+            ],
         }
 
     ],
+    
 };
 
 
@@ -56,12 +68,12 @@ const data = {
 function Dashboard() {
     return (
         <div>
-           
-            <div style={{  height: '800px',width:'400px' }}>
+           <Search/>
+            <div style={{  height: '300px',width:'400px',border:'2px solid red',marginLeft:'2px'}}>
                 <Bar data={data} options={options} />
             </div>
-            <Horizontal1/>
-            <PieChart1/>
+              <Horizontal1/>  
+             <PieChart1/> 
            <Area1/>
         </div>
 

@@ -1,26 +1,68 @@
 import React from 'react'
-import { PieChart, Pie} from 'recharts';
+import {Chart as ChartJs, Tooltip, Title, ArcElement, Legend} from 'chart.js';
+import { Pie } from 'react-chartjs-2';
+ChartJs.register(
+  Tooltip, Title, ArcElement, Legend
+);
+
+
+const options={
+  plugins: {
+    legend: {
+        display: true,
+        position:'right',
+        labels: {
+          usePointStyle: true,
+          pointStyle: 'circle',
+            color: 'black'
+        }
+    }
+}
+}
+
+const data={
+  datasets:[{
+    data:[915,359,545,637,1,670,289,496,448,799],
+  backgroundColor:[
+    'blue',
+    'green',
+    'purple',
+    'violet',
+    'blue',
+    'red',
+    'orange',
+    
+  ]
+}],
+
+  labels:[
+    'Loreum ipsum',
+    'Loreum ipsum',
+    'Loreum ipsum',
+    'Loreum ipsum',
+    'Loreum ipsum',
+    'Loreum ipsum',
+    
+  ],
+ 
+};
+
 
 function PieChart1() {
 
-    const data = [
-        {name: 'loreum ipsum', students: 400},
-        {name: 'loreum ipsum', students: 600},
-        {name: 'loreum ipsum', students: 200},
-        {name: 'loreum ipsum', students: 100},
-        {name: 'loreum ipsum', students: 400},
-        {name: 'loreum ipsum', students: 600},
-        {name: 'loreum ipsum', students: 200},
-        {name: 'loreum ipsum', students: 100},
-        {name: 'loreum ipsum', students: 100}
 
-      ];
+    
 
   return (
-    <div>
-         <PieChart width={300} height={300} style={{marginLeft:'50px',marginTop:'-100px'}}>
-          <Pie data={data} dataKey="students" outerRadius={150} fill="green" />
-        </PieChart>
+    <div  style={{marginLeft:'2px',border:'2px solid black',
+        marginTop:'23px',
+        width:'400px'
+    }}>
+     <div style={{width:'75%',height:"80%"}}>
+     <Pie data={data} options={options} />
+     </div>
+      
+         
     </div>
   )
 }

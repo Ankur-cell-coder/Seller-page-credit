@@ -19,7 +19,7 @@
     "react-scripts": "5.0.1",
     "reactstrap": "^9.1.6",
     "recharts": "^2.5.0",
-    "styled-components": "^5.3.9",
+    "styled-components": "^5.3.10",
     "web-vitals": "^2.1.4",
     "yup": "^1.0.2"
   },
