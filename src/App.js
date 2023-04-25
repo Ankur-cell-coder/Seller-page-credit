@@ -66,7 +66,7 @@ const App = () => {
 
               <div>
                 <Link to={'/orders'} className='navcomp'>
-                <select style={{ width: '100px', background: 'skyblue', border: '0px ' }}>
+                <select style={{ width: '100px', background: 'skyblue', border: '0px ',fontSize:'16px' }}>
                   <option>Orders </option>
                   <option>A</option>
                   <option>B</option>
@@ -76,7 +76,7 @@ const App = () => {
 
               <div>
               <Link to={'/catalogue'} className='navcomp'>
-                <select style={{ width: '100px', background: 'skyblue', border: '0px ' }}>
+                <select style={{ width: '100px', background: 'skyblue', border: '0px ',fontSize:'16px' }}>
                   <option>Catalogue </option>
                   <option>A</option>
                   <option>B</option>
@@ -85,7 +85,7 @@ const App = () => {
               </div>
               <div>
               <Link to={'/logistics'} className='navcomp'>
-                <select style={{ width: '100px', background: 'skyblue', border: '0px ' }}>
+                <select style={{ width: '100px', background: 'skyblue', border: '0px ',fontSize:'16px' }}>
                   <option>Logistics </option>
                   <option>A</option>
                   <option>B</option>
@@ -94,7 +94,7 @@ const App = () => {
               </div>
               <div>
               <Link to={'/rc'} className='navcomp'>
-                <select style={{ width: '100px', background: 'skyblue', border: '0px ' }}>
+                <select style={{ width: '100px', background: 'skyblue', border: '0px ',fontSize:'16px' }}>
                   <option>R & C </option>
                   <option>A</option>
                   <option>B</option>

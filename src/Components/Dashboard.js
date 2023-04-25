@@ -67,7 +67,7 @@ const data = {
 
 function Dashboard() {
     return (
-        <div>
+        <div >
            <Search/>
             <div style={{  height: '300px',width:'400px',border:'2px solid red',marginLeft:'2px'}}>
                 <Bar data={data} options={options} />
