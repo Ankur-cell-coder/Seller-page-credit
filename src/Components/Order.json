@@ -1,0 +1,24 @@
+{
+"detail1":{
+    "domain_id":"#AH6AGH",
+    "ordered_id":"23/09/2022",
+    "ordered_data":"Jacob Marcus",
+    "buyer_id":"#AHGA6H",
+    "city_code":"#AHGA6H",
+    "country_code":"#AH6AGH",
+    "payment_mode":"card",
+    "order_status":"processing",
+    "total_order":"$1000"
+},
+"detail2":{
+    "domain_id":"#AH6AGH",
+    "ordered_id":"23/09/2022",
+    "ordered_data":"Jacob Marcus",
+    "buyer_id":"#AHGA6H",
+    "city_code":"#AHGA6H",
+    "country_code":"#AH6AGH",
+    "payment_mode":"card",
+    "order_status":"processing",
+    "total_order":"$1000"
+}
+}
