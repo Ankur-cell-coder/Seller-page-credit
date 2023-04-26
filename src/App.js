@@ -9,12 +9,15 @@ import './App.css';
 import Dashboard from './Components/Dashboard';
 import { useState } from 'react';
 import SignIn from "./Components/signin/signin.component";
-import Orders from './Components/Orders';
+import Orders from './Components/orders/Orders';
 import Catalogue from './Components/Catalogue';
 import Logistics from './Components/Logistics';
 import R_C from './Components/R_C';
 import Rating from './Components/Rating';
 import Contact from './Components/Contact';
+import OrderBilling from './Components/orders/OrderBilling';
+import OrderFuilfilment from './Components/orders/OrderFuilfilment';
+import OrderPayment from './Components/orders/OrderPayment';
 
 
 const logout = function () {
@@ -66,39 +69,39 @@ const App = () => {
 
               <div>
                 <Link to={'/orders'} className='navcomp'>
-                <select style={{ width: '100px', background: 'skyblue', border: '0px ',fontSize:'16px' }}>
-                  <option>Orders </option>
-                  <option>A</option>
+                {/* <select style={{ width: '100px', background: 'skyblue', border: '0px ',fontSize:'16px' }}> */}
+                  Orders
+                  {/* <option>A</option>
                   <option>B</option>
-                </select>
+                </select> */}
                 </Link>
               </div>
 
               <div>
               <Link to={'/catalogue'} className='navcomp'>
-                <select style={{ width: '100px', background: 'skyblue', border: '0px ',fontSize:'16px' }}>
+                {/* <select style={{ width: '100px', background: 'skyblue', border: '0px ',fontSize:'16px' }}> */}
                   <option>Catalogue </option>
-                  <option>A</option>
+                  {/* <option>A</option>
                   <option>B</option>
-                </select>
+                </select> */}
               </Link>
               </div>
               <div>
               <Link to={'/logistics'} className='navcomp'>
-                <select style={{ width: '100px', background: 'skyblue', border: '0px ',fontSize:'16px' }}>
+                {/* <select style={{ width: '100px', background: 'skyblue', border: '0px ',fontSize:'16px' }}> */}
                   <option>Logistics </option>
-                  <option>A</option>
+                  {/* <option>A</option>
                   <option>B</option>
-                </select>
+                </select> */}
                 </Link>
               </div>
               <div>
               <Link to={'/rc'} className='navcomp'>
-                <select style={{ width: '100px', background: 'skyblue', border: '0px ',fontSize:'16px' }}>
+                {/* <select style={{ width: '100px', background: 'skyblue', border: '0px ',fontSize:'16px' }}> */}
                   <option>R & C </option>
-                  <option>A</option>
+                  {/* <option>A</option>
                   <option>B</option>
-                </select>
+                </select> */}
                 </Link>
               </div>
               <div>
@@ -147,6 +150,9 @@ const App = () => {
                   <Route exact path="/rc" element={loggedIn ? <R_C /> : <SignIn />} />
                   <Route exact path="/rating" element={loggedIn ? <Rating /> : <SignIn />} />
                   <Route exact path="/contact" element={loggedIn ? <Contact /> : <SignIn />} />
+                  <Route exact path="/orders/billing" element={loggedIn ? <OrderBilling/> : <SignIn />} />
+                  <Route exact path="/orders/fuilfilment" element={loggedIn ? <OrderFuilfilment/> : <SignIn />} />
+                  <Route exact path="/orders/payment" element={loggedIn ? <OrderPayment/> : <SignIn />} />
                 </Routes>
               </div>
             </Col>

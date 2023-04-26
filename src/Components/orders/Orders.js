@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 
 const data = [
@@ -84,7 +85,7 @@ function Orders() {
           return (
             <tr key={key}>
               <td><label><input type="checkbox" /></label></td>
-              <td>{val.domain_id}</td>
+              <td><Link to={'/orders/billing'} style={{textDecoration:'none'}}>{val.domain_id}</Link></td>
               <td>{val.ordered_id}</td>
               <td>{val.ordered_data}</td>
               <td>{val.buyer_id}</td>
