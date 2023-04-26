@@ -55,8 +55,15 @@ const App = () => {
 
           <div className='navcontent'>
 
-            <div style={{ marginLeft: '20px', marginTop: '20px' }}>
-              LOGO
+            <div style={{ marginLeft: '20px', marginTop: '4px',
+            background: colorvar,
+            width: '180px',
+            height: '50px',
+            display: 'flex',
+            justifyContent: 'center'
+          
+          }}>
+           <div style={{marginTop:'10px'}}> Credit Bazar</div>
             </div>
 
             <div className='middle_navbar'>
@@ -127,11 +134,26 @@ const App = () => {
           :
 
           <Nav>
-            <nav className="nav">
-              <a href="/" className="title">
-                LOGO
-              </a>
-            </nav>
+           
+            <div style=
+                  {{
+                   
+                    background: colorvar,
+                    width: '180px',
+                    height: '50px',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    marginTop:'20px',
+                    marginLeft:'20px'
+                  }}>
+                  <Link to={"/"}
+                    style=
+                    {{
+                      textDecoration: 'none', color: 'white', marginTop: '8px'
+                    }}>
+                    Credit Bazaar
+                  </Link>
+           </div>
 
           </Nav>
 

@@ -20,7 +20,7 @@ function SignInForm(props) {
             <Formik {...props} validationSchema={validationSchema}>
                 <div className="box" >
                     <div className="title" >
-                        <h6> Welcome back! Please enter your details. </h6>
+                        <h5> Welcome back! Please enter your details. </h5>
                     </div>
                     <Form className="Form" >
                         <FormGroup>

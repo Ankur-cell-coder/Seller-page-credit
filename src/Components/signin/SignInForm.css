@@ -1,14 +1,14 @@
 .box{
     /* border: 2px solid tomato; */
     /* margin-top: 10px; */
-    height: 600px;
+    height: 580px;
     padding: 8px;
     background-color: rgba(198,198,198,0.28);
 }
 
 .Form{
     /* border: 2px solid gray; */
-    height: 200px;
+    height: 180px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -36,6 +36,7 @@
     height: 50px;
     background-color: #ec9006;
     color: white;
+    cursor:pointer;
 }
 .checkbox{
     margin: 2px;
