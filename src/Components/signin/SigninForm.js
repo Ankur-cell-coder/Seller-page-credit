@@ -3,6 +3,7 @@ import * as Yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { FormGroup, Button } from "react-bootstrap";
 import './SignInForm.css'
+import gimg from '../images2/Group 7577.png'
 
 function SignInForm(props) {
 
@@ -66,7 +67,8 @@ function SignInForm(props) {
 
                     <div className="boxy" >
                         <div className="google"  >
-                            <h6>Log In With Google</h6>
+                            <img src={gimg}></img>
+                            <h6 style={{marginLeft:'25px',fontSize:'13px'}}>Log In With Google</h6>
                         </div>
                     </div>
 

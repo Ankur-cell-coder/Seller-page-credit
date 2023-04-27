@@ -18,6 +18,7 @@ import Contact from './Components/Contact';
 import OrderBilling from './Components/orders/OrderBilling';
 import OrderFuilfilment from './Components/orders/OrderFuilfilment';
 import OrderPayment from './Components/orders/OrderPayment';
+import creditlogo from './images/Credit bazaar logo.png'
 
 
 const logout = function () {
@@ -63,7 +64,8 @@ const App = () => {
             justifyContent: 'center'
           
           }}>
-           <div style={{marginTop:'10px'}}> Credit Bazar</div>
+          
+           <img src={creditlogo}></img>
             </div>
 
             <div className='middle_navbar'>
@@ -146,13 +148,14 @@ const App = () => {
                     marginTop:'20px',
                     marginLeft:'20px'
                   }}>
-                  <Link to={"/"}
+                  {/* <Link to={"/"}
                     style=
                     {{
                       textDecoration: 'none', color: 'white', marginTop: '8px'
                     }}>
                     Credit Bazaar
-                  </Link>
+                  </Link> */}
+                  <img src={creditlogo}></img>
            </div>
 
           </Nav>
