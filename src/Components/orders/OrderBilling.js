@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { Navigate } from "react-router-dom";
 
 const data = [
     {
@@ -14,11 +15,12 @@ const data = [
 function OrderBilling() {
 
     const val = "< Back to Overview";
+    const Navigate=useNavigate();
 
     return (
         <Billing>
             <div >
-                <button className='button'>{val}</button>
+                <button className='button' onClick={Navigate(-1)}>{val}</button>
             </div>
 
             <div className='orderlink'>
@@ -66,7 +68,7 @@ const Billing = styled.div`
         display:flex;
         width:600px;
         justify-content:space-between;
-
+        
       
     }
     .button{

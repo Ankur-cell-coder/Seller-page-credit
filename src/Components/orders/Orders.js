@@ -7,45 +7,68 @@ import { Link } from 'react-router-dom'
 const data = [
   {
     domain_id: "#AH6AGH", ordered_id: "23/09/2022", ordered_data: "Jacob Marcus", buyer_id: "#AHGA6H", city_code: "#AHGA6H", country_code: "#AH6AGH", payment_mode: "card",
-    order_status: "processing", total_order: "$1000"
+    order_status: "processing", total_order: "$1000",checkedbox:'false'
   },
   {
     domain_id: "#AH6AGH", ordered_id: "23/09/2022", ordered_data: "Jacob Marcus", buyer_id: "#AHGA6H", city_code: "#AHGA6H", country_code: "#AH6AGH", payment_mode: "card",
-    order_status: "processing", total_order: "$1000"
+    order_status: "processing", total_order: "$1000",checkedbox:'false'
   },
   {
     domain_id: "#AH6AGH", ordered_id: "23/09/2022", ordered_data: "Jacob Marcus", buyer_id: "#AHGA6H", city_code: "#AHGA6H", country_code: "#AH6AGH", payment_mode: "card",
-    order_status: "processing", total_order: "$1000"
+    order_status: "processing", total_order: "$1000",checkedbox:'false'
   },
   {
     domain_id: "#AH6AGH", ordered_id: "23/09/2022", ordered_data: "Jacob Marcus", buyer_id: "#AHGA6H", city_code: "#AHGA6H", country_code: "#AH6AGH", payment_mode: "card",
-    order_status: "processing", total_order: "$1000"
+    order_status: "processing", total_order: "$1000",checkedbox:'false'
   },
   {
     domain_id: "#AH6AGH", ordered_id: "23/09/2022", ordered_data: "Jacob Marcus", buyer_id: "#AHGA6H", city_code: "#AHGA6H", country_code: "#AH6AGH", payment_mode: "card",
-    order_status: "processing", total_order: "$1000"
+    order_status: "processing", total_order: "$1000",checkedbox:'false'
   },
   {
     domain_id: "#AH6AGH", ordered_id: "23/09/2022", ordered_data: "Jacob Marcus", buyer_id: "#AHGA6H", city_code: "#AHGA6H", country_code: "#AH6AGH", payment_mode: "card",
-    order_status: "processing", total_order: "$1000"
+    order_status: "processing", total_order: "$1000",checkedbox:'false'
   },
   {
     domain_id: "#AH6AGH", ordered_id: "23/09/2022", ordered_data: "Jacob Marcus", buyer_id: "#AHGA6H", city_code: "#AHGA6H", country_code: "#AH6AGH", payment_mode: "card",
-    order_status: "processing", total_order: "$1000"
+    order_status: "processing", total_order: "$1000",checkedbox:'false'
   },
   {
     domain_id: "#AH6AGH", ordered_id: "23/09/2022", ordered_data: "Jacob Marcus", buyer_id: "#AHGA6H", city_code: "#AHGA6H", country_code: "#AH6AGH", payment_mode: "card",
-    order_status: "processing", total_order: "$1000"
+    order_status: "processing", total_order: "$1000",checkedbox:'false'
   },
   {
     domain_id: "#AH6AGH", ordered_id: "23/09/2022", ordered_data: "Jacob Marcus", buyer_id: "#AHGA6H", city_code: "#AHGA6H", country_code: "#AH6AGH", payment_mode: "card",
-    order_status: "processing", total_order: "$1000"
+    order_status: "processing", total_order: "$1000",checkedbox:'false'
   }
 
 ]
 
 function Orders() {
 
+  const [checked1,setChecked1]=useState(false);
+  const [checked2,setChecked2]=useState(false);
+  const [checked3,setChecked3]=useState(false);
+  const [checked4,setChecked4]=useState(false);
+  const [checked5,setChecked5]=useState(false);
+  const [checked6,setChecked6]=useState(false);
+  const [checked7,setChecked7]=useState(false);
+  const [checked8,setChecked8]=useState(false);
+  const [checked9,setChecked9]=useState(false);
+  const [checked,setChecked]=useState(false);
+
+  const checkHandler=()=>{
+    setChecked(!checked);
+    setChecked1(!checked1);
+    setChecked2(!checked2);
+    setChecked3(!checked3);
+    setChecked4(!checked4);
+    setChecked5(!checked5);
+    setChecked6(!checked6);
+    setChecked7(!checked7);
+    setChecked8(!checked8);
+    setChecked9(!checked9);
+  }
 
 
   return (
@@ -69,7 +92,11 @@ function Orders() {
 
       <table>
         <tr>
-          <th><label><input type="checkbox" /></label></th>
+          <th><label><input type="checkbox" 
+             checked={checked}
+             id="checkbox"
+             onChange={checkHandler}
+          /></label></th>
           <th>Domain Id</th>
           <th>Ordered Id</th>
           <th>Ordered date</th>
@@ -84,7 +111,11 @@ function Orders() {
         {data.map((val, key) => {
           return (
             <tr key={key}>
-              <td><label><input type="checkbox" /></label></td>
+              <td><label><input type="checkbox"
+               id="checkbox"
+              checked={checked1}
+              onClick={checkHandler}
+              /></label></td>
               <td><Link to={'/orders/billing'} style={{textDecoration:'none'}}>{val.domain_id}</Link></td>
               <td>{val.ordered_id}</td>
               <td>{val.ordered_data}</td>
