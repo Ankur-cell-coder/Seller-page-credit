@@ -1,20 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function OrderPayment() {
+    const Navigate=useNavigate();
     const val = "< Back to Overview";
     return (
         <Order1>
 
             <div >
-                <button className='button'>{val}</button>
+                <button className='button' onClick={()=>Navigate(-1)}>{val}</button>
             </div>
 
             <div className='orderlink'>
-                <Link to={'/orders/billing'} style={{ textDecoration: 'none',color:'black' }}>Order Billing Details</Link>
-                <Link to={'/orders/fuilfilment'} style={{ textDecoration: 'none',color:'black' }}>Order Fuilfilment Details</Link>
-                <Link to={'/orders/payment'} style={{ textDecoration: 'none',color:'black' }}>Order Payment Details</Link>
+                <Link to={'/orders/billing'} >Order Billing Details</Link>
+                <Link to={'/orders/fuilfilment'} >Order Fuilfilment Details</Link>
+                <Link to={'/orders/payment'} >Order Payment Details</Link>
             </div>
 
             <div className='details'>
@@ -71,8 +72,20 @@ margin-left:20px;
     width:600px;
     justify-content:space-between;
 
+    .link {
+        color: white;
+        text-decoration:none;
+      }
+      
+     
+      .link-active {
+        color: red;
+        text-decoration:none;
+      }
+
   
 }
+
 .button{
     width:200px;
      height:30px;

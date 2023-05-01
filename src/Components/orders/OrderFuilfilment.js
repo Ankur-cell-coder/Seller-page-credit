@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const data = [
     { amount: 'Loreum ipsum', mode: 'Loreum ipsum', currency: '$', value: 'Loreum ipsum', uri: 'Loreum ipsum', status: 'Pending', type: 'Loreum ipsum', vpa: 'Loreum ipsum' },
@@ -17,17 +17,18 @@ const data = [
 
 
 function OrderFuilfilment() {
+    const Navigate=useNavigate();
     const val = "< Back to Overview";
     return (
         <Fuilfilment>
             <div >
-                <button className='button'>{val}</button>
+                <button className='button' onClick={()=>Navigate(-1)}>{val}</button>
             </div>
 
             <div className='orderlink'>
-                <Link to={'/orders/billing'} style={{ textDecoration: 'none',color:'black' }}>Order Billing Details</Link>
-                <Link to={'/orders/fuilfilment'} style={{ textDecoration: 'none',color:'black' }}>Order Fuilfilment Details</Link>
-                <Link to={'/orders/payment'} style={{ textDecoration: 'none',color:'black' }}>Order Payment Details</Link>
+                <Link to={'/orders/billing'} >Order Billing Details</Link>
+                <Link to={'/orders/fuilfilment'} >Order Fuilfilment Details</Link>
+                <Link to={'/orders/payment'} >Order Payment Details</Link>
             </div>
 
             <table>
@@ -92,8 +93,21 @@ margin-left:20px;
     width:600px;
     justify-content:space-between;
 
+    .link {
+        color: white;
+        text-decoration:none;
+      }
+      
+     
+      .link-active {
+        color: red;
+        text-decoration:none;
+       
+      }
+
   
 }
+
 .button{
     width:200px;
      height:30px;

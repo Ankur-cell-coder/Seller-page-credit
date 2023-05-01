@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link, useNavigate } from 'react-router-dom';
-import { Navigate } from "react-router-dom";
+
 
 const data = [
     {
@@ -20,13 +20,13 @@ function OrderBilling() {
     return (
         <Billing>
             <div >
-                <button className='button' onClick={Navigate(-1)}>{val}</button>
+                <button className='button' onClick={()=>Navigate(-1)}>{val}</button>
             </div>
 
             <div className='orderlink'>
-                <Link to={'/orders/billing'} style={{ textDecoration: 'none',color:'black' }}>Order Billing Details</Link>
-                <Link to={'/orders/fuilfilment'} style={{ textDecoration: 'none',color:'black' }}>Order Fuilfilment Details</Link>
-                <Link to={'/orders/payment'} style={{ textDecoration: 'none' ,color:'black'}}>Order Payment Details</Link>
+                <Link to={'/orders/billing'} >Order Billing Details</Link>
+                <Link to={'/orders/fuilfilment'} >Order Fuilfilment Details</Link>
+                <Link to={'/orders/payment'} >Order Payment Details</Link>
             </div>
 
             <table>
@@ -69,8 +69,20 @@ const Billing = styled.div`
         width:600px;
         justify-content:space-between;
         
+        .link {
+            color: white;
+            text-decoration:none;
+          }
+          
+         
+          .link-active {
+            color: red;
+            text-decoration:none;
+           
+          }
       
     }
+   
     .button{
         width:200px;
          height:30px;
