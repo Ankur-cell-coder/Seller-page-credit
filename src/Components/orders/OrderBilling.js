@@ -15,18 +15,18 @@ const data = [
 function OrderBilling() {
 
     const val = "< Back to Overview";
-    const Navigate=useNavigate();
+    const Navigate = useNavigate();
 
     return (
         <Billing>
-            <div >
-                <button className='button' onClick={()=>Navigate(-1)}>{val}</button>
+            <div className='button'>
+                <Link to={'/orders'} style={{ textDecoration: 'none', marginTop: '5px', color: 'black' }}>{val}</Link>
             </div>
 
             <div className='orderlink'>
-                <Link to={'/orders/billing'} style={{ textDecoration: 'none',color:'red'  }}>Order Billing Details</Link>
-                <Link to={'/orders/fuilfilment'} style={{ textDecoration: 'none',color:'black'  }}>Order Fuilfilment Details</Link>
-                <Link to={'/orders/payment'} style={{ textDecoration: 'none' ,color:'black' }}>Order Payment Details</Link>
+                <Link to={'/orders/billing'} style={{ textDecoration: 'none', color: 'red' }}>Order Billing Details</Link>
+                <Link to={'/orders/fuilfilment'} style={{ textDecoration: 'none', color: 'black' }}>Order Fuilfilment Details</Link>
+                <Link to={'/orders/payment'} style={{ textDecoration: 'none', color: 'black' }}>Order Payment Details</Link>
             </div>
 
             <table>
@@ -83,10 +83,12 @@ const Billing = styled.div`
    
     .button{
         width:200px;
-         height:30px;
-         background:white;
-         border:1px solid gray;
-        font-size:18px;
+     height:35px;
+     background:white;
+     border:1px solid gray;
+    font-size:18px;
+    display:flex;
+    justify-content:center;
     }
     table{
         margin-top:25px;

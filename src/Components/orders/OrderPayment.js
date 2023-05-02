@@ -3,19 +3,19 @@ import styled from 'styled-components'
 import { Link, useNavigate } from 'react-router-dom';
 
 function OrderPayment() {
-    const Navigate=useNavigate();
+    const Navigate = useNavigate();
     const val = "< Back to Overview";
     return (
         <Order1>
 
-            <div >
-                <button className='button' onClick={()=>Navigate(-1)}>{val}</button>
+            <div className='button'>
+                <Link to={'/orders'} style={{ textDecoration: 'none', marginTop: '5px', color: 'black' }}>{val}</Link>
             </div>
 
             <div className='orderlink'>
-                <Link to={'/orders/billing'} style={{ textDecoration: 'none',color:'black' }}>Order Billing Details</Link>
-                <Link to={'/orders/fuilfilment'} style={{ textDecoration: 'none',color:'black' }}>Order Fuilfilment Details</Link>
-                <Link to={'/orders/payment'} style={{ textDecoration: 'none',color:'red' }}>Order Payment Details</Link>
+                <Link to={'/orders/billing'} style={{ textDecoration: 'none', color: 'black' }}>Order Billing Details</Link>
+                <Link to={'/orders/fuilfilment'} style={{ textDecoration: 'none', color: 'black' }}>Order Fuilfilment Details</Link>
+                <Link to={'/orders/payment'} style={{ textDecoration: 'none', color: 'red' }}>Order Payment Details</Link>
             </div>
 
             <div className='details'>
@@ -77,10 +77,12 @@ margin-left:20px;
 
 .button{
     width:200px;
-     height:30px;
+     height:35px;
      background:white;
      border:1px solid gray;
     font-size:18px;
+    display:flex;
+    justify-content:center;
 }
 .details{
     display:flex;

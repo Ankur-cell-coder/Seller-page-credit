@@ -13,9 +13,7 @@ function Area1() {
         {name:"Saturday", x:50, y:41},
         {name:"Sunday", x:60, y:59}
     ];
-
   return (
-    
     <AreaChart width={1122} height={325} data={data} style={{marginLeft:'407px',marginTop:'-328px',
     border:"2px solid black"
     }}>

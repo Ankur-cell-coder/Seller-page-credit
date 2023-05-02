@@ -19,6 +19,7 @@ import OrderBilling from './Components/orders/OrderBilling';
 import OrderFuilfilment from './Components/orders/OrderFuilfilment';
 import OrderPayment from './Components/orders/OrderPayment';
 import creditlogo from './images/Credit bazaar logo.png'
+import Ratinggraph from './Components/Ratinggraph';
 
 
 const logout = function () {
@@ -178,6 +179,7 @@ const App = () => {
                   <Route exact path="/orders/billing" element={loggedIn ? <OrderBilling/> : <SignIn />} />
                   <Route exact path="/orders/fuilfilment" element={loggedIn ? <OrderFuilfilment/> : <SignIn />} />
                   <Route exact path="/orders/payment" element={loggedIn ? <OrderPayment/> : <SignIn />} />
+                  <Route exact path="/rating/graph" element={loggedIn ? <Ratinggraph/> : <SignIn />} />
                 </Routes>
               </div>
             </Col>

@@ -21,8 +21,8 @@ function OrderFuilfilment() {
     const val = "< Back to Overview";
     return (
         <Fuilfilment>
-            <div >
-                <button className='button' onClick={()=>Navigate(-1)}>{val}</button>
+            <div className='button'>
+                <Link to={'/orders'} style={{textDecoration:'none',marginTop:'5px',color:'black'}}>{val}</Link>
             </div>
 
             <div className='orderlink'>
@@ -98,10 +98,13 @@ margin-left:20px;
 
 .button{
     width:200px;
-     height:30px;
+     height:35px;
      background:white;
      border:1px solid gray;
     font-size:18px;
+    display:flex;
+    justify-content:center;
+   
 }
 table{
     margin-top:25px;

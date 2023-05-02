@@ -12,9 +12,6 @@ import Search from './Search';
 Chart.register(CategoryScale);
 
 
-
-
-
 /////  first chart 
 const options = {
     indexAxis: 'y',  

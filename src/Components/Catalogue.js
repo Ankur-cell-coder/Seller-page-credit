@@ -5,31 +5,31 @@ import { Link } from 'react-router-dom'
 
 const data = [
   {
-    name:"Loreum ipsum",offer:"Loreum ipsum",Brand:"loreum ipsum",additional_seller:"loreum ipsum",payment:"loreum ipsum",rating:"4",Potential:"Loreum ipsum"
+    name:"Loreum ipsum",offer:"Loreum ipsum",Brand:"loreum ipsum",additional_seller:"loreum ipsum",payment:"loreum ipsum",rating:"*****",Potential:"Loreum ipsum"
   },
   {
-    name:"Loreum ipsum",offer:"Loreum ipsum",Brand:"loreum ipsum",additional_seller:"loreum ipsum",payment:"loreum ipsum",rating:"4",Potential:"Loreum ipsum"
+    name:"Loreum ipsum",offer:"Loreum ipsum",Brand:"loreum ipsum",additional_seller:"loreum ipsum",payment:"loreum ipsum",rating:"*****",Potential:"Loreum ipsum"
   },
   {
-    name:"Loreum ipsum",offer:"Loreum ipsum",Brand:"loreum ipsum",additional_seller:"loreum ipsum",payment:"loreum ipsum",rating:"4",Potential:"Loreum ipsum"
+    name:"Loreum ipsum",offer:"Loreum ipsum",Brand:"loreum ipsum",additional_seller:"loreum ipsum",payment:"loreum ipsum",rating:"*****",Potential:"Loreum ipsum"
   },
   {
-    name:"Loreum ipsum",offer:"Loreum ipsum",Brand:"loreum ipsum",additional_seller:"loreum ipsum",payment:"loreum ipsum",rating:"4",Potential:"Loreum ipsum"
+    name:"Loreum ipsum",offer:"Loreum ipsum",Brand:"loreum ipsum",additional_seller:"loreum ipsum",payment:"loreum ipsum",rating:"*****",Potential:"Loreum ipsum"
   },
   {
-    name:"Loreum ipsum",offer:"Loreum ipsum",Brand:"loreum ipsum",additional_seller:"loreum ipsum",payment:"loreum ipsum",rating:"4",Potential:"Loreum ipsum"
+    name:"Loreum ipsum",offer:"Loreum ipsum",Brand:"loreum ipsum",additional_seller:"loreum ipsum",payment:"loreum ipsum",rating:"*****",Potential:"Loreum ipsum"
   },
   {
-    name:"Loreum ipsum",offer:"Loreum ipsum",Brand:"loreum ipsum",additional_seller:"loreum ipsum",payment:"loreum ipsum",rating:"4",Potential:"Loreum ipsum"
+    name:"Loreum ipsum",offer:"Loreum ipsum",Brand:"loreum ipsum",additional_seller:"loreum ipsum",payment:"loreum ipsum",rating:"*****",Potential:"Loreum ipsum"
   },
   {
-    name:"Loreum ipsum",offer:"Loreum ipsum",Brand:"loreum ipsum",additional_seller:"loreum ipsum",payment:"loreum ipsum",rating:"4",Potential:"Loreum ipsum"
+    name:"Loreum ipsum",offer:"Loreum ipsum",Brand:"loreum ipsum",additional_seller:"loreum ipsum",payment:"loreum ipsum",rating:"*****",Potential:"Loreum ipsum"
   },
   {
-    name:"Loreum ipsum",offer:"Loreum ipsum",Brand:"loreum ipsum",additional_seller:"loreum ipsum",payment:"loreum ipsum",rating:"4",Potential:"Loreum ipsum"
+    name:"Loreum ipsum",offer:"Loreum ipsum",Brand:"loreum ipsum",additional_seller:"loreum ipsum",payment:"loreum ipsum",rating:"*****",Potential:"Loreum ipsum"
   },
   {
-    name:"Loreum ipsum",offer:"Loreum ipsum",Brand:"loreum ipsum",additional_seller:"loreum ipsum",payment:"loreum ipsum",rating:"4",Potential:"Loreum ipsum"
+    name:"Loreum ipsum",offer:"Loreum ipsum",Brand:"loreum ipsum",additional_seller:"loreum ipsum",payment:"loreum ipsum",rating:"*****",Potential:"Loreum ipsum"
   }
 
 ]
