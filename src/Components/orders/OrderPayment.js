@@ -62,9 +62,18 @@ function OrderPayment() {
 export default OrderPayment
 
 const Order1 = styled.div`
+width:98%;
+height:610px;
 display:flex;
 flex-direction:column;
 margin-left:20px;
+
+@media only screen and (min-width: 1800px){
+    // border:2px solid red;
+    width:98%;
+    height:810px;
+  }
+    
 
 .orderlink{
     margin-top:30px;
@@ -93,9 +102,12 @@ margin-left:20px;
 .content{
     display:flex;
     flex-direction:column;
-    height:450px;
-    // border:2px solid black;
+    height:260%;
+    //  border:2px solid black;
     // width:700px;
+    @media only screen and (min-width: 1800px){
+        height:370%;
+    }
 }
 
 

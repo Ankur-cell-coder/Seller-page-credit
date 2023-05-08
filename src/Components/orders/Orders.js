@@ -128,7 +128,7 @@ export default Orders
 const Orders1 = styled.div`
    width:99.8%;
    height:600px;
-    border:2px solid red;
+    // border:2px solid red;
    display: flex;
    flex-direction:column;
    table {

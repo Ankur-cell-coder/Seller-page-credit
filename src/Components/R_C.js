@@ -101,15 +101,26 @@ export default R_C
 
 const Rc1=styled.div`
 
+
 width:99.8%;
 height:580px;
 display: flex;
 flex-direction:column;
+
+
+@media only screen and (min-width: 1800px){
+  // border:2px solid red;
+  width:98%;
+  height:810px;
+  margin-left:20px;
+}
+
 table {
  // border: 2px solid forestgreen;
- width: 1536px;
- height: 560px;
+ width: 99.8%;
+    height:150%;
  margin-top:20px;
+
 }
 .lowersection{
  margin-left:10px;

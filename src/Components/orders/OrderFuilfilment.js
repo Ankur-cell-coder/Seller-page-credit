@@ -82,6 +82,8 @@ function OrderFuilfilment() {
 export default OrderFuilfilment
 
 const Fuilfilment = styled.div`
+width:98%;
+height:610px;
 display:flex;
 flex-direction:column;
 margin-left:20px;
@@ -93,7 +95,6 @@ margin-left:20px;
     width:600px;
     justify-content:space-between;
 
-  
 }
 
 .button{
@@ -107,7 +108,10 @@ margin-left:20px;
    
 }
 table{
-    margin-top:25px;
+    width: 99.8%;
+    height:150%;
+    margin-top:1.25em;
+    // border:3px solid blue;
 }
 th {
     border-bottom: 1px solid gray;
@@ -115,8 +119,7 @@ th {
   }
   td {
     text-align: left;
-    width:50px;
-    height:40px;
+   
     border-bottom: 1px solid gray;
   }
   .lowersection{
@@ -125,6 +128,10 @@ th {
     display:flex;
     justify-content:space-between;
     margin-top:10px;
+  }
+  @media only screen and (min-width: 1800px){
+    width:98%;
+    height:810px;
   }
     
 

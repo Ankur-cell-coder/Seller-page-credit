@@ -59,6 +59,8 @@ function OrderBilling() {
 export default OrderBilling
 
 const Billing = styled.div`
+width:98.7%;
+height:600px;
     display:flex;
     flex-direction:column;
     margin-left:20px;
@@ -103,4 +105,9 @@ const Billing = styled.div`
         height:50px;
         border-bottom: 1px solid gray;
       }
+      @media only screen and (min-width: 1800px){
+        width:98.9%;
+        height:810px;
+      }
+    
 `;
