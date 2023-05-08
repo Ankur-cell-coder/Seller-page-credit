@@ -46,30 +46,7 @@ const data = [
 
 function Orders() {
 
-  // const [checked1,setChecked1]=useState(false);
-  // const [checked2,setChecked2]=useState(false);
-  // const [checked3,setChecked3]=useState(false);
-  // const [checked4,setChecked4]=useState(false);
-  // const [checked5,setChecked5]=useState(false);
-  // const [checked6,setChecked6]=useState(false);
-  // const [checked7,setChecked7]=useState(false);
-  // const [checked8,setChecked8]=useState(false);
-  // const [checked9,setChecked9]=useState(false);
-  // const [checked,setChecked]=useState(false);
-
-  // const checkHandler=()=>{
-  //   setChecked(checked);
-  //   setChecked1(checked1);
-  //   setChecked2(checked2);
-  //   setChecked3(checked3);
-  //   setChecked4(checked4);
-  //   setChecked5(checked5);
-  //   setChecked6(checked6);
-  //   setChecked7(checked7);
-  //   setChecked8(checked8);
-  //   setChecked9(checked9);
-  // }
-
+ 
 
   return (
 
@@ -150,14 +127,14 @@ export default Orders
 
 const Orders1 = styled.div`
    width:99.8%;
-   height:36.25em;
+   height:600px;
     border:2px solid red;
    display: flex;
    flex-direction:column;
    table {
     // border: 2px solid forestgreen;
-    width: 96em;
-    height: 35em;
+    width: 99.8%;
+    height:150%;
     margin-top:1.25em;
   }
   .lowersection{
@@ -194,4 +171,9 @@ const Orders1 = styled.div`
     height:1.875em;
     justify-content:center;
   }
+
+  @media only screen and (min-width: 1800px){
+    height:810px;
+  }
+
 `;
