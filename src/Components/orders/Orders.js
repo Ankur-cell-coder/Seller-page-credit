@@ -87,7 +87,7 @@ function Orders() {
          <input placeholder='  Enter Order Id'  className='valuesection'></input>
          <input placeholder='  Start Date'  className='valuesection'></input>
          <input placeholder='  Enter City Code'  className='valuesection'></input>
-         <input placeholder='       Search' style={{width:'300px',height:'30px',marginTop:'10px'}}></input>
+         <input placeholder='       Search' style={{width:'300px',height:'1.875em',marginTop:'0.625em'}}></input>
       </div>
 
       <table>
@@ -150,22 +150,22 @@ export default Orders
 
 const Orders1 = styled.div`
    width:99.8%;
-   height:580px;
-  //  border:2px solid red;
+   height:36.25em;
+    border:2px solid red;
    display: flex;
    flex-direction:column;
    table {
     // border: 2px solid forestgreen;
-    width: 1536px;
-    height: 560px;
-    margin-top:20px;
+    width: 96em;
+    height: 35em;
+    margin-top:1.25em;
   }
   .lowersection{
-    margin-left:10px;
-    width: 1500px;
+    margin-left:0.625em;
+    width: 93.75em;
     display:flex;
     justify-content:space-between;
-    margin-top:10px;
+    margin-top:0.625em;
   }
    th {
     border-bottom: 1px solid gray;
@@ -176,22 +176,22 @@ const Orders1 = styled.div`
   }
 
   .uppersection{
-    width:980px;
+    width:61.25em;
     display:flex;
     justify-content:space-between;
-    margin-left:10px;
+    margin-left:0.625em;
   }
   .inputsection{
-    margin-left:10px;
+    margin-left:0.625em;
     display:flex;
-    width:1500px;
+    width:93.75em;
     justify-content: space-between;
   }
   .valuesection{
-    margin-top:10px;
+    margin-top:0.625em;
     display:flex;
-    width:190px;
-    height:30px;
+    width:11.875em;
+    height:1.875em;
     justify-content:center;
   }
 `;

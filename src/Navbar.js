@@ -1,10 +1,7 @@
 
 export default function Navbar(){
     return (
-        // <nav className="nav">
-        //     <a href="/creditbazaar" className="title">
-        //         Credit Bazaar
-        //     </a>
+      
             <ul>
                 <li>
                     <a href="/dashboard">Dashboard</a>

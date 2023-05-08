@@ -220,7 +220,7 @@ const Contact1 = styled.div`
     height:66px;
   }
   .upperpart{
-      border:2px solid green;
+      border:2px solid red;
       width:1200px;
       height:560px;
   } 
