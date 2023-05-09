@@ -28,7 +28,7 @@ const logout = function () {
 }
 
 const App = () => {
-  var colorvar = "#8EBE00";
+  var colorvar = "black";
   let loggedIn = false;
 
   const [option, setOption] = useState("seller");
@@ -36,11 +36,11 @@ const App = () => {
     let authToken = localStorage.getItem("JWT");
     if (authToken === null) {
       loggedIn = false;
-      colorvar = "#8EBE00";
+   
       axios.defaults.headers.common.Authorization = null;
     } else {
       loggedIn = true;
-      colorvar = "#ec9006";
+     
       axios.defaults.headers.common.Authorization = `Bearer ${authToken}`;
     }
   })();
@@ -72,6 +72,7 @@ const App = () => {
             <div className='middle_navbar'>
 
               <div>
+              {/* <a href="/"> Dashboard</a> */}
               <Link to={'/'} className='navcomp'>
                  Dashboard
                 </Link>

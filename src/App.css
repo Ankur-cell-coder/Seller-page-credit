@@ -38,8 +38,15 @@ body h3 {
 }
 .navcomp{
   text-decoration: none;
-  color: black;
+  color:black;
   font-size:17px;
+  
+}
+a:hover{
+  color:red;
+}
+a:active,a:focus{
+  color:red;
 }
 
 .lgout{

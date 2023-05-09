@@ -189,11 +189,21 @@ const Contact1 = styled.div`
     height:648px;
   
      background:black;
+     @media only screen and (min-width: 1800px){
+      width:400px;
+      height:860px;
+      
+    }
   }
   .right{
     border:2px solid black;
     height:648px;
     width:1204px;
+    @media only screen and (min-width: 1800px){
+      width:1515px;
+      height:858px;
+      
+    }
   }
   .searchbar{
      margin-top:5px;
@@ -205,6 +215,10 @@ const Contact1 = styled.div`
      display:flex;
      justify-content:center;
      font-size:15px;
+     @media only screen and (min-width: 1800px){
+      width:400px;
+      
+    }
   }
   .person{
     display:flex;
@@ -218,16 +232,28 @@ const Contact1 = styled.div`
     border-bottom: 1px solid red;
     color:white;
     height:66px;
+    @media only screen and (min-width: 1800px){
+      width:400px;
+      height:89px;
+    }
   }
   .upperpart{
       border:2px solid red;
       width:1200px;
       height:560px;
+      @media only screen and (min-width: 1800px){
+        width:1510px;
+        height:760px;
+      }
   } 
   .lowerpart{
     width:1180px;
     height:30px;
     margin-left:30px;
+
+    @media only screen and (min-width: 1800px){
+      margin-left:80px;
+    }
   }
 
 `;
