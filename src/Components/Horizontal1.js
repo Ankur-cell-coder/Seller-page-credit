@@ -52,25 +52,16 @@ const data = {
 function Horizontal1() {
     return (
         <Horizonta1>
-            <div style={{ width: '370px', height: '280px', marginLeft: '407px',
-            border:'2px solid black',
-            marginTop:"-303px",
-          
-             }}>
+
+            <div className='class1' >
                 <Bar data={data} options={options} />
             </div>
-            <div style={{ width: '370px', height: '280px', marginLeft: '782px',
-           
-             marginTop:'-283px',
-             border:'2px solid black',
-         }}>
+
+            <div className='class2' >
                 <Bar data={data} options={options} />
             </div>
-            <div style={{width: '370px', height: '280px', marginLeft: '1157px',
-           
-            marginTop:'-283px',
-            border:'2px solid black',
-        }}>
+
+            <div className='class3'>
                 <Bar data={data} options={options} />
             </div>
 
@@ -81,6 +72,54 @@ function Horizontal1() {
 export default Horizontal1
 
 const Horizonta1 = styled.div`
+
+  .class1{
+     width:370px;
+     height:280px;
+     margin-left:407px;
+     border:2px solid black;
+     margin-top:-303px;
+     @media only screen and (min-width: 1800px){
+        margin-left:517px;
+        width:455px;
+     height:310px;
+     margin-top:-403px;
+     }
+  }
+
+
+
+
+  .class2{
+    width:370px;
+    height:280px;
+    margin-left:782px;
+    border:2px solid black;
+    margin-top:-283px;
+
+    @media only screen and (min-width: 1800px){
+      margin-left:985px;
+       width:455px;
+    height:310px;
+    margin-top:-313px;
+    }
+ }
+
+
+ .class3{
+    width:370px;
+    height:280px;
+    margin-left:1152px;
+    border:2px solid black;
+    margin-top:-283px;
+
+    @media only screen and (min-width: 1800px){
+      margin-left:1450px;
+       width:455px;
+    height:310px;
+    margin-top:-313px;
+    }
+ }
 
 
 

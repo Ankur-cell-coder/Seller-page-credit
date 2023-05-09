@@ -1,6 +1,7 @@
 import React from 'react'
 import {Chart as ChartJs, Tooltip, Title, ArcElement, Legend} from 'chart.js';
 import { Pie } from 'react-chartjs-2';
+import styled from 'styled-components';
 ChartJs.register(
   Tooltip, Title, ArcElement, Legend
 );
@@ -54,17 +55,40 @@ function PieChart1() {
     
 
   return (
-    <div  style={{marginLeft:'2px',border:'2px solid black',
-        marginTop:'23px',
-        width:'400px'
-    }}>
-     <div style={{width:'75%',height:"80%"}}>
+    <Pie1>
+     <div className='graph' >
      <Pie data={data} options={options} />
      </div>
       
          
-    </div>
+    </Pie1>
   )
 }
 
 export default PieChart1
+
+const Pie1=styled.div`
+margin-left:2px;
+border:2px solid black;
+margin-top:23px;
+width:400px;
+
+@media only screen and (min-width: 1800px){
+   width:500px;
+   height:375px;
+   margin-left:10px;
+   margin-top:93px;
+}
+
+.graph{
+  width:75%;
+  height:80%;
+  @media only screen and (min-width: 1800px){
+    width:90%;
+    height:95%;
+    margin-left:10px;
+  }
+  
+}
+
+`;

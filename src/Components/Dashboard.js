@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
+import styled from 'styled-components';
 
 import Chart from 'chart.js/auto';
 import { Bar } from 'react-chartjs-2';
@@ -64,15 +65,15 @@ const data = {
 
 function Dashboard() {
     return (
-        <div >
+        <Dashboard1 >
            <Search/>
-            <div style={{  height: '300px',width:'400px',border:'2px solid red',marginLeft:'2px'}}>
+            <div className='Bargraph'>
                 <Bar data={data} options={options} />
             </div>
               <Horizontal1/>  
              <PieChart1/> 
            <Area1/>
-        </div>
+        </Dashboard1>
 
 
 
@@ -80,3 +81,26 @@ function Dashboard() {
 }
 
 export default Dashboard
+
+const Dashboard1=styled.div`
+
+//    border:2px solid red;
+   @media only screen and (min-width: 1800px){
+    height:833px;
+  }
+   
+  .Bargraph{
+    height:300px;
+    width:400px;
+    border:2px solid red;
+    margin-left:2px;
+
+    @media only screen and (min-width: 1800px){
+        height:400px;
+        width:500px;
+        margin-left:10px;
+    }
+  
+  }
+
+`;
